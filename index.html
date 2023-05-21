@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Stylesheet -->
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Super Mystery Box</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Header Section -->
+    <div class="row text-light" style="height: 8%;">
+      <div class="container text-center" style="padding-top: 1.5em;">
+        <div class="row">
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn--instruction" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Game Instructions</button>
+          </div>
+          <div class="col">
+            <h3 style="color: rgb(226, 150, 70);">Super Mystery Box</h3>
+          </div>
+          <div class="col">
+            <button class="btn btn-primary btn--reset" type="button">Game Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-light" style="height: 84%;">
+      <!-- Player 1 Section -->
+      <div class="col-4 player player--0 player--active">
+        <div class="d-flex justify-content-center" style="margin-top: 5em; margin-bottom: 1em;">
+          <img src="/images/marioPlayer.png" alt="" class="player-img">
+        </div>
+
+        <h4 class="name text-center">Player 1</h4>
+
+        <div class="container text-center" style="margin-top: 3em;">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+              <img src="/images/item_1.png" alt="" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-md-auto">
+              <div class="container d-flex h-100">
+                <div class="row justify-content-center align-self-center">
+                 x
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-2">
+              <div class="container d-flex h-100">
+                <div class="row justify-content-center align-self-center" id="score--0" style="font-size: 30px;">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section style="border-style:dashed; margin-top: 3em; margin-left: 150px; margin-right: 150px;">
+          <div class="d-flex justify-content-center" style="margin-top: 2em; margin-bottom: 1em;">
+            Current:
+          </div>
+          <div class="d-flex justify-content-center" style="margin-top: 3em; margin-bottom: 2em;">
+            <p class="current-score" id="current--0" style="font-size: 20px;">0</p>
+          </div>
+        </section>
+
+      </div>
+      <!-- Game Section  -->
+      <div class="col-4">
+        <div class="d-flex justify-content-center" style="margin-top: 5em;">
+          <img src='' alt="Hit mystery box" class="box" style="width: 95px; height: 95px;" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="/images/brick.png" alt="" style="width: 100px; height: 100px;">
+          <img src="/images/brick.png" alt="" style="width: 100px; height: 100px;">
+          <img src="/images/mystery_box.png" alt="Hit mystery box" style="width: 100px; height: 100px;" />
+          <img src="/images/brick.png" alt="" style="width: 100px; height: 100px;">
+          <img src="/images/brick.png" alt="" style="width: 100px; height: 100px;">
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="/images/mario-jump.png" alt="" style="width: 100px; height: 100px;">
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 2em;">
+          <img src="/images/tunnel.png" alt="" style="width: 150px; height: 100px;">
+        </div>
+        <div class="justify-content-center" style="margin-top: 4em;">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary btn--hit" type="button">Hit Box</button>
+            <button class="btn btn-primary btn--collect" type="button">Collect Coin</button>
+          </div>
+        </div>
+      </div>
+      <!-- Player 2 Section -->
+      <div class="col-4 player player--1">
+        <div class="d-flex justify-content-center" style="margin-top: 5em; margin-bottom: 1em;">
+          <img src="/images/luigiPlayer.png" alt="" class="player-img">
+        </div>
+        <h4 class="name text-center">Player 2</h4>
+
+        <div class="container text-center" style="margin-top: 3em;">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+              <img src="/images/item_1.png" alt="" style="width: 50px; height: 50px;">
+            </div>
+            <div class="col-md-auto">
+              <div class="container d-flex h-100">
+                <div class="row justify-content-center align-self-center">
+                 x
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-2">
+              <div class="container d-flex h-100">
+                <div class="row justify-content-center align-self-center" id="score--1" style="font-size: 30px;">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section style="border-style:dashed; margin-top: 3em; margin-left: 150px; margin-right: 150px;">
+          <div class="d-flex justify-content-center" style="margin-top: 2em; margin-bottom: 1em;">
+            Current:
+          </div>
+          <div class="d-flex justify-content-center" style="margin-top: 3em; margin-bottom: 2em;">
+            <p class="current-score" id="current--1" style="font-size: 20px;">0</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="row text-light" style="height: 8%;">
+      <div class="floor"></div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Instructions</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="font-size: 10px;">
+          <p>The player who first scores 20 or more coins wins.</p>
+          <p><span style="color: #983106;">Hit box</span>: display mystery box item</p>
+          <p><span style="color: #983106;">Collect Coin</span>: their current score will be added to their total coin and then player switch.</p>
+          <p></p>
+          <ul>
+            <li>If the item is coin, add 1 coin to current score.</li>
+            <li>If the item is mushroom, double current coin.</li>
+              <ul>
+                <li>If current score is 0: add 2 coins</li>
+              </ul>
+            <li>If the item is piranha plant: switch player</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

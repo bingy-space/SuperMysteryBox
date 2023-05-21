@@ -1,0 +1,35 @@
+body{
+    background-color: #112240;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.floor{
+    background-image: url(images/super_mario__brick_block.png);
+    background-size: 65px;
+    background-repeat: repeat-x;
+  }
+[src=''] {
+    visibility: hidden;
+}
+.player--active .name{
+    color: rgb(31, 116, 194);
+}
+.player--active .player-img{
+    border-color: rgb(31, 116, 194);
+}
+.player--winner .name{
+    color: rgb(242, 222, 5);
+}
+.player--winner .player-img{
+    border-color: rgb(242, 222, 5);
+}
+.btn{
+    background-color: #983106;
+    border: none;
+}
+.player-img{
+    width:250px;
+    height: 250px;
+    border:10px solid white;
+    border-radius: 500px;
+}
